@@ -5,3 +5,78 @@ touch 04.Rmd
 ]0;~/Documents/DataCamp/Working with Web Data in Rpeterde-MacBook-Air:Working with Web Data in R PETER$ git init
 Initialized empty Git repository in /Users/peter/Documents/DataCamp/Working with Web Data in R/.git/
 ]0;~/Documents/DataCamp/Working with Web Data in Rpeterde-MacBook-Air:Working with Web Data in R PETER$ git add .
+git remote
+origin
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/3A176422/console06/A58A83D2[m
+	[31mmodified:   .Rproj.user/3A176422/console06/A58A83D2.env[m
+	[31mmodified:   .Rproj.user/3A176422/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/3A176422/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/2C2A1720-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/3D6574A-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/73DE01D1-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/7EF7AA85[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/7EF7AA85-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/8F42C273-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/95DC7167-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/AAD3DB29-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/B0C17FD4-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/B1843E55-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/CAB2F5F3[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/CAB2F5F3-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/CCFD15D3-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/CF556736-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/D23EC099-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/E03114B4-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/E38CCE77-contents[m
+	[31mdeleted:    .Rproj.user/3A176422/sources/s-ACC95B21/lock_file[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c75xtpoyplz1x/000002.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c75xtpoyplz1x/000002.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000003.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000003.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/c9rrjxgv77yrs/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000003.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000003.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/35854520-04/1/s/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/BFD658D7-01/1/s/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/3A176422ACC95B21/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/c2ztuwfeshu4g/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cbskalssti58f/000003.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cbskalssti58f/000003.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/ce38s5yno2x8z/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cg4zojmg7zy70/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/chp3pe554mpgb/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000003.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000003.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cut69t549cs1p/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CB1E0D2D-02/1/s/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000003.metadata[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000003.rdf[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chunks.json[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cujqpq60s7jdw/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cvx9tuaa7vk1v/000004.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cwmv2ynw6bpmd/000002.csv[m
+	[31mdeleted:    .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cwmv2ynw6bpmd/000003.error[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git brand[Kch
+[?1h=* [32mmaster[m[m
+[K[?1l>]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ bit[K[K[Kgit add .
