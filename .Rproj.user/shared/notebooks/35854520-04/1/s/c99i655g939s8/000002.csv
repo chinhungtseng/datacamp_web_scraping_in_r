@@ -1,0 +1,6 @@
+"0","# Rename the columns of wiki_table"
+"0","colnames(wiki_table) <- c(""key"", ""value"")"
+"0","# Remove the empty row from wiki_table"
+"0","cleaned_table <- subset(wiki_table, !value == """")"
+"0","# Print cleaned_table"
+"0","cleaned_table"

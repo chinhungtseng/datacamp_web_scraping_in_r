@@ -1,0 +1,8 @@
+html_document:
+  theme: united
+  highlight: tango
+  number_sections: true
+  toc: true
+  toc_float:
+    collapsed: false
+    smooth_scroll: true

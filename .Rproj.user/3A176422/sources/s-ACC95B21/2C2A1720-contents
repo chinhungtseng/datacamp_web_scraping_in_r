@@ -1,0 +1,221 @@
+---
+title: "Downloading Files and Using API Clients"
+output: html_document
+---
+
+# Downloading Files and Using API Clients
+
+Sometimes getting data off the internet is very, very simple - it's stored in a format that R can handle and just lives on a server somewhere, or it's in a more complex format and perhaps part of an API but there's an R package designed to make using it a piece of cake. This chapter will explore how to download and read in static files, and how to use APIs when pre-existing clients are available.
+
+
+## Introduction: Working With Web Data in R
+
+- Downloading files and using specialised packages to get data from web
+- httr package to query APIs using GET() and POST()
+- JSON and XML: data formats commonly returned
+- CSS to navigate and extract data from webpages
+
+## Downloading files and reading them into R {.tabset .tabset-fade .tabset-pills}
+
+### Exercise
+
+In this first exercise we're going to look at reading already-formatted datasets - CSV or TSV files, with which you'll no doubt be familiar! - into R from the internet. This is a lot easier than it might sound because R's file-reading functions accept not just file paths, but also URLs.
+
+### Instructions
+
+The URLs to those files are in your R session as csv_url and tsv_url.
+
+- Read the CSV file stored at csv_url into R using read.csv(). Assign the result to csv_data.
+- Do the same for the TSV file stored at tsv_url using read.delim(). Assign the result to tsv_data.
+- Examine each object using head().
+
+### script.R
+
+```{r, collapse=TRUE}
+# Here are the URLs! As you can see they're just normal strings
+csv_url <- "http://s3.amazonaws.com/assets.datacamp.com/production/course_1561/datasets/chickwts.csv"
+tsv_url <- "http://s3.amazonaws.com/assets.datacamp.com/production/course_3026/datasets/tsv_data.tsv"
+
+# Read a file in from the CSV URL and assign it to csv_data
+csv_data <- read.csv(csv_url)
+
+# Read a file in from the TSV URL and assign it to tsv_data
+tsv_data <- read.delim(tsv_url)
+
+# Examine the objects with head()
+head(csv_data)
+head(tsv_data)
+```
+
+
+## Saving raw files to disk  {.tabset .tabset-fade .tabset-pills}
+
+### Exercise
+
+Sometimes just reading the file in from the web is enough, but often you'll want to store it locally so that you can refer back to it. This also lets you avoid having to spend the start of every analysis session twiddling your thumbs while particularly large files download.
+
+Helpfully, R has download.file(), a function that lets you do just that: download a file to a location of your choice on your computer. It takes two arguments; `url`, indicating the URL to read from, and `destfile`, the destination to write the downloaded file to. In this case, we've pre-defined the URL - once again, it's `csv_url`.
+
+### Instructions
+
+Download the file at `csv_url` with `download.file()`, naming the destination file `"feed_data.csv"`.
+Read `"feed_data.csv"` into R with read.csv().
+
+### script.R
+
+```{r, collapse=TRUE}
+# Download the file with download.file()
+download.file(url = csv_url, destfile = "feed_data.csv")
+
+# Read it in with read.csv()
+csv_data <- read.csv("feed_data.csv")
+```
+
+## Saving formatted files to disk  {.tabset .tabset-fade .tabset-pills}
+
+### Exercise
+
+Whether you're downloading the raw files with download.file() or using read.csv() and its sibling functions, at some point you're probably going to find the need to modify your input data, and then save the modified data to disk so you don't lose the changes.
+
+You could use write.table(), but then you have to worry about accidentally writing out data in a format R can't read back in. An easy way to avoid this risk is to use saveRDS() and readRDS(), which save R objects in an R-specific file format, with the data structure intact. That means you can use it for any type of R object (even ones that don't turn into tables easily), and not worry you'll lose data reading it back in. saveRDS() takes two arguments, object, pointing to the R object to save and file pointing to where to save it to. readRDS() expects file, referring to the path to the RDS file to read in.
+
+In this example we're going to modify the data you already read in, which is predefined as csv_data, and write the modified version out to a file before reading it in again.
+
+### Instructions
+
+- Modify csv_data to add the column square_weight, containing the square of the weight column.
+- Save it to disk as "modified_feed_data.RDS" with saveRDS().
+- Read it back in as modified_feed_data with readRDS().
+- Examine modified_feed_data.
+
+### script.R
+
+```{r, collapse=TRUE}
+# Add a new column: square_weight
+csv_data$square_weight <- csv_data$weight ^ 2
+
+# Save it to disk with saveRDS()
+saveRDS(object = csv_data, file = "modified_feed_data.RDS")
+
+# Read it back in with readRDS()
+modified_feed_data <- readRDS(file = "modified_feed_data.RDS")
+
+# Examine modified_feed_data
+str(modified_feed_data)
+```
+
+## Understanding Application Programming Interfaces
+
+- 'websites, but for machines'
+- Can be used to expose data automatically
+- Lets you make queries for specific bits of that data
+
+API Clients
+
+- Native (in R!) interfaces to APIs Hides API complexity
+- Lets you read data in as R objects
+
+Using API Clients
+
+- Always use a client if you can
+- Find them by googling 'CRAN [name of website]' Only write code you have to write
+
+pageviews
+
+```{r, eval=FALSE}
+library(pageviews)
+article_pageviews(article = project = "en.wikipedia", "R_(programming_language)")
+```
+
+## API test {.tabset .tabset-fade .tabset-pills}
+
+### Question
+
+In the last video you were introduced to Application Programming Interfaces, or APIs, along with their intended purpose (as the computer equivalent of the visible web page that you and I might interact with) and their utility for data retrieval. What are APIs for?
+
+### Answer 
+
+Possible Answers
+
+[x] Making parts of a website available to people.
+
+[x] Making parts of a website available to puppies.
+
+[o] Making parts of a website available to computers.
+
+## Using API clients {.tabset .tabset-fade .tabset-pills}
+
+### Exercise
+
+So we know that APIs are server components to make it easy for your code to interact with a service and get data from it. We also know that R features many "clients" - packages that wrap around connections to APIs so you don't have to worry about the details.
+
+Let's look at a really simple API client - the pageviews package, which acts as a client to Wikipedia's API of pageview data. As with other R API clients, it's formatted as a package, and lives on CRAN - the central repository of R packages. The goal here is just to show how simple clients are to use: they look just like other R code, because they are just like other R code.
+
+### Instructions
+
+- Load the package pageviews.
+- Use the article_pageviews() function to get the pageviews for the article "Hadley Wickham".
+- Examine the resulting object.
+
+### script.R
+
+```{r, collapse=TRUE}
+# Load pageviews
+library(pageviews)
+
+# Get the pageviews for "Hadley Wickham"
+hadley_pageviews <- article_pageviews(project = "en.wikipedia", "Hadley Wickham")
+
+# Examine the resulting object
+str(hadley_pageviews)
+```
+
+## Access tokens and APIs
+
+API etiquette
+
+- Overwhelming the API means you can't use it 
+- Overwhelming the API means nobody else can use it APIs 
+- issue 'access tokens' to control and identify use
+
+Getting access tokens
+
+- Usually requires registering your email address 
+- Sometimes providing an explanation
+- Example: https://www.wordnik.com/ which requires both!
+
+birdnik
+
+- birdnik a package that wraps the Wordnik API 
+- Provide API key in key argument in birdnik functions
+
+## Using access tokens {.tabset .tabset-fade .tabset-pills}
+
+### Exercise
+
+As we discussed in the last video, it's common for APIs to require access tokens - unique keys that verify you're authorised to use a service. They're usually pretty easy to use with an API client.
+
+To show how they work, and how easy it can be, we're going to use the R client for the Wordnik dictionary and word use service - 'birdnik' - and an API token we prepared earlier. Birdnik is fairly simple (I wrote it!) and lets you get all sorts of interesting information about word usage in published works. For example, to get the frequency of the use of the word "chocolate", you would write:
+
+> word_frequency(api_key, "chocolate")
+
+In this exercise we're going to look at the word "vector" (since it's a common word in R!) using a pre-existing API key (stored as `api_key`)
+
+### Instructions
+
+- Load the package `birdnik`.
+- Using the pre-existing API key and [word_frequency()](https://www.rdocumentation.org/packages/birdnik/topics/word_frequency), get the frequency of the word `"vector"` in Wordnik's database. Assign the results to `vector_frequency`.
+
+### script.R
+
+```{r, collapse=TRUE}
+if (!require('birdnik'))devtools::install_github("ironholds/birdnik")
+
+# Load birdnik
+library(birdnik)
+
+# Get the word frequency for "vector", using api_key to access it
+
+api_key <- "d8ed66f01da01b0c6a0070d7c1503801993a39c126fbc3382"
+vector_frequency <- word_frequency(api_key, "vector")
+```

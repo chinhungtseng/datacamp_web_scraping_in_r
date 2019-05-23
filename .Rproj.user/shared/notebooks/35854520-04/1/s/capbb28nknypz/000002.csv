@@ -1,0 +1,4 @@
+"0","# Turn table_element into a data frame and assign it to wiki_table"
+"0","wiki_table <- html_table(table_element)"
+"0","# Print wiki_table"
+"0","wiki_table"

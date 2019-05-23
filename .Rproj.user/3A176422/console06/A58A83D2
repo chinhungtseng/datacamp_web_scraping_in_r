@@ -1,0 +1,7 @@
+touch 04.Rmd
+[Kpeterde-MacBook-Air:Working with Web Data in R PETER$ touch 05.Rmd
+]0;~/Documents/DataCamp/Working with Web Data in R[?1034hpeterde-MacBook-Air:Working with Web Data in R PETER$ touch .nojerkll[C[1Pkll
+]0;~/Documents/DataCamp/Working with Web Data in Rpeterde-MacBook-Air:Working with Web Data in R PETER$ echo "# datacamp_web_scraping_in_r" >> README.md
+]0;~/Documents/DataCamp/Working with Web Data in Rpeterde-MacBook-Air:Working with Web Data in R PETER$ git init
+Initialized empty Git repository in /Users/peter/Documents/DataCamp/Working with Web Data in R/.git/
+]0;~/Documents/DataCamp/Working with Web Data in Rpeterde-MacBook-Air:Working with Web Data in R PETER$ git add .

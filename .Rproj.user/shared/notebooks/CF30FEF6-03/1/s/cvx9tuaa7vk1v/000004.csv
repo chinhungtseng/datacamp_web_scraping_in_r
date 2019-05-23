@@ -1,0 +1,16 @@
+"0","read_xml(content(resp_xml, ""text""))
+"
+"1","{xml_document}
+"
+"1","<api>"
+"1","
+"
+"1","[1] <continue rvcontinue=""20150528042700|664370232"" continue=""||""/>"
+"1","
+"
+"1","[2] <warnings>\n  <main xml:space=""preserve"">Subscribe to the mediawiki-api-announce mailing list a ..."
+"1","
+"
+"1","[3] <query>\n  <pages>\n    <page _idx=""41916270"" pageid=""41916270"" ns=""0"" title=""Hadley Wickham"">\ ..."
+"1","
+"
