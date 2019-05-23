@@ -80,3 +80,93 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git brand[Kch
 [?1h=* [32mmaster[m[m
 [K[?1l>]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ bit[K[K[Kgit add .
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git commit =m[K[K-m 'teest'[K[K[K[Kst'
+[master cb2b333] test
+ 56 files changed, 88 insertions(+), 3236 deletions(-)
+ rewrite .Rproj.user/3A176422/console06/INDEX001 (86%)
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/2C2A1720-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/3D6574A-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/73DE01D1-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/7EF7AA85
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/7EF7AA85-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/8F42C273-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/95DC7167-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/AAD3DB29-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/B0C17FD4-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/B1843E55-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/CAB2F5F3
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/CAB2F5F3-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/CCFD15D3-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/CF556736-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/D23EC099-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/E03114B4-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/E38CCE77-contents
+ delete mode 100644 .Rproj.user/3A176422/sources/s-ACC95B21/lock_file
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c75xtpoyplz1x/000002.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c75xtpoyplz1x/000002.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000003.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c99i655g939s8/000003.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/c9rrjxgv77yrs/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000003.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/capbb28nknypz/000003.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/35854520-04/1/s/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/BFD658D7-01/1/s/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/3A176422ACC95B21/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/c2ztuwfeshu4g/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cbskalssti58f/000003.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cbskalssti58f/000003.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/ce38s5yno2x8z/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cg4zojmg7zy70/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/chp3pe554mpgb/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000003.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cpszopdoo8w9c/000003.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/C2F68C30-05/1/s/cut69t549cs1p/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/CB1E0D2D-02/1/s/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000003.metadata
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chrgcoodlfcxq/000003.rdf
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/chunks.json
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cujqpq60s7jdw/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cvx9tuaa7vk1v/000004.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cwmv2ynw6bpmd/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/CF30FEF6-03/1/s/cwmv2ynw6bpmd/000003.error
+ rewrite .Rproj.user/shared/notebooks/paths (100%)
+ create mode 100644 .gitignore
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git push oriign[K[K[King[K[Kn[K[Kgin mat[Kster
+Enumerating objects: 28, done.
+Counting objects:   3% (1/28)   Counting objects:   7% (2/28)   Counting objects:  10% (3/28)   Counting objects:  14% (4/28)   Counting objects:  17% (5/28)   Counting objects:  21% (6/28)   Counting objects:  25% (7/28)   Counting objects:  28% (8/28)   Counting objects:  32% (9/28)   Counting objects:  35% (10/28)   Counting objects:  39% (11/28)   Counting objects:  42% (12/28)   Counting objects:  46% (13/28)   Counting objects:  50% (14/28)   Counting objects:  53% (15/28)   Counting objects:  57% (16/28)   Counting objects:  60% (17/28)   Counting objects:  64% (18/28)   Counting objects:  67% (19/28)   Counting objects:  71% (20/28)   Counting objects:  75% (21/28)   Counting objects:  78% (22/28)   Counting objects:  82% (23/28)   Counting objects:  85% (24/28)   Counting objects:  89% (25/28)   Counting objects:  92% (26/28)   Counting objects:  96% (27/28)   Counting objects: 100% (28/28)   Counting objects: 100% (28/28), done.
+Delta compression using up to 4 threads
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  60% (9/15)   Writing objects:  66% (10/15)   Writing objects:  73% (11/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15)   Writing objects:  93% (14/15)   Writing objects: 100% (15/15)   Writing objects: 100% (15/15), 2.35 KiB | 481.00 KiB/s, done.
+Total 15 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/chinhungtseng/datacamp_web_scraping_in_r.git
+   d35b31b..cb2b333  master -> master
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/3A176422/console06/A58A83D2[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/3A176422/console06/A58A83D2[m
+	[31mmodified:   .gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DataCamp/datacamp_web_scraping_in_rpeterde-MacBook-Air:datacamp_web_scraping_in_r PETER$ git ad [Kd .
